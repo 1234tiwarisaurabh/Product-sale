@@ -439,7 +439,7 @@ with tabs[2]:
                 color = PLOTLY_PALETTE[i % len(PLOTLY_PALETTE)]
                 fig4.add_trace(go.Scatterpolar(
                     r=vals + [vals[0]], theta=M_LABELS + [M_LABELS[0]],
-                    name=cat, line_color=color, fill="toself", fillcolor=color + "18",
+                    name=cat, line_color=color, fill="toself", fillcolor="rgba(0, 212, 255, 0.1)",
                 ))
             apply_layout(fig4, title="Category Seasonal Radar", height=420,
                          polar=dict(bgcolor="rgba(0,0,0,0)",
